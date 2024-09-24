@@ -20,15 +20,16 @@ export default function SearchBar() {
   };
 
   return (
-    <div>
+    <div className="w-full my-8">
       <input
-        className="border border-gray-300 p-2 m-2 rounded"
+        className="p-2 rounded w-10/12"
+        placeholder="검색어를 입력하세요..."
         value={search}
         onChange={onChangeSearch}
         onKeyUp={enterKey}
       />
       <button
-        className="bg-pink-500 text-white py-2 px-4 rounded"
+        className="bg-gray-600 text-white ml-2 py-2 px-4 rounded"
         onClick={onClickSearch}
       >
         검색
